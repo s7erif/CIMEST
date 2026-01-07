@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quantitative Analysis – Complete Exam Coverage</title>
+  <style>
+:root{
+--bg:#0f172a;--card:#111827;--accent:#38bdf8;--accent2:#22c55e;--accent3:#a78bfa;
+--text:#e5e7eb;--muted:#94a3b8;--border:#1f2937}
+*{box-sizing:border-box;font-family:Segoe UI,Tahoma,Arial}
+body{margin:0;background:linear-gradient(135deg,#020617,#0f172a);color:var(--text);line-height:1.8}
+header{padding:60px 20px 40px;text-align:center}
+header h1{color:var(--accent);font-size:2.8rem}
+header p{color:var(--muted);max-width:1000px;margin:12px auto}
+nav{position:sticky;top:0;z-index:1000;background:#020617e6;backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+nav ul{display:flex;gap:10px;list-style:none;padding:10px 16px;margin:0;overflow-x:auto}
+nav a{text-decoration:none;color:var(--text);padding:8px 14px;border-radius:20px}
+nav a:hover{background:rgba(56,189,248,.15)}
+section{max-width:1200px;margin:auto;padding:40px 18px}
+h2{color:var(--accent2);margin-bottom:10px}
+h3{color:var(--accent3)}
+.intro{color:var(--muted);margin-bottom:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:linear-gradient(180deg,#020617,var(--card));border-radius:20px;padding:25px;box-shadow:0 20px 40px rgba(0,0,0,.4);transition:.4s}
+.card:hover{transform:translateY(-6px)}
+.law{color:var(--accent);background:rgba(56,189,248,.1);padding:12px;border-radius:12px;margin-bottom:10px;text-align:center;font-size:18px}
+.formula{background:#020617;border:1px dashed var(--border);border-radius:14px;padding:14px;margin:12px 0;font-family:Consolas,monospace}
+.steps{margin-left:18px}
+.exam-tip{background:rgba(167,139,250,.12);padding:12px;border-radius:12px;margin-top:10px}
+.quiz{margin-top:15px;background:rgba(34,197,94,.1);padding:15px;border-radius:15px}
+details{margin-top:8px}
+summary{cursor:pointer;color:var(--accent2);font-weight:bold}
+footer{margin-top:40px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>📘 Quantitative Analysis – Complete Exam Guide</h1>
+  <p>
+    تغطية شاملة لكل أفكار الامتحانات (MCQ – مسائل – نظري)
+    مع القوانين، الصيغ العامة، فكرة الحل، وأخطاء الطلبة الشائعة.
+  </p>
+</header>
+<nav>
+  <ul>
+    <li><a href="#acid">Acid–Base</a></li>
+    <li><a href="#buffers">Buffers</a></li>
+    <li><a href="#redox">Redox</a></li>
+    <li><a href="#precip">Precipitation</a></li>
+    <li><a href="#edta">EDTA</a></li>
+    <li><a href="#stats">Errors & Stats</a></li>
+  </ul>
+</nav>
+
+<section id="acid">
+<h2>1️⃣ Acid – Base (جميع أفكار الامتحان)</h2>
+<p class="intro">تشمل: pH، pOH، weak/strong، حساب pH بعد الخلط، والمعايرات.</p>
+<div class="grid">
+<div class="card">
+<h3>Strong Acids & Bases</h3>
+<div class="law">pH = −log[H⁺] | pOH = −log[OH⁻]</div>
+<div class="formula">pH + pOH = 14</div>
+<ul class="steps">
+<li>التأين كامل → لا Ka ولا Kb</li>
+<li>بعد الخلط: استخدم mol / total volume</li>
+</ul>
+<div class="exam-tip">📌 فكرة امتحانية: لو في خلط حمض + قاعدة قوية → احسب الفائض أولًا.</div>
+<div class="quiz"><b>Quiz:</b> Mix 50 mL 0.1 M HCl with 50 mL 0.1 M NaOH
+<details><summary>Answer</summary>Neutral → pH = 7</details></div>
+</div>
+
+<div class="card">
+<h3>Weak Acid / Weak Base</h3>
+<div class="formula">[H⁺] = √(Ka × C) | [OH⁻] = √(Kb × C)</div>
+<ul class="steps">
+<li>ينفع التقريب لو Ka صغير</li>
+<li>لو طُلب pKa → pKa = −log Ka</li>
+</ul>
+<div class="quiz"><b>Quiz:</b> Ka = 1×10⁻⁵, C=0.1
+<details><summary>Answer</summary>pH ≈ 3</details></div>
+</div>
+</div>
+</section>
+
+<section id="buffers">
+<h2>2️⃣ Buffers (حمضي – قاعدي)</h2>
+<p class="intro">سؤال مضمون تقريبًا كل امتحان.</p>
+<div class="grid">
+<div class="card">
+<h3>Buffer pH</h3>
+<div class="law">pH = pKa + log (Salt / Acid)</div>
+<ul class="steps">
+<li>حوّل كل شيء لمولات</li>
+<li>بعد الإضافة: عدّل المولات</li>
+</ul>
+<div class="exam-tip">📌 trap: استخدام التركيز بدل المولات بعد الخلط ❌</div>
+</div>
+<div class="card">
+<h3>Buffer Capacity</h3>
+<p>English: Resistance to pH change</p>
+<p>Arabic: قدرة البفر على مقاومة التغير في pH</p>
+<div class="quiz"><b>Quiz:</b> Best buffer when?
+<details><summary>Answer</summary>When pH ≈ pKa</details></div>
+</div>
+</div>
+</section>
+
+<section id="redox">
+<h2>3️⃣ Redox & Electrochemistry</h2>
+<div class="grid">
+<div class="card">
+<h3>Oxidation – Reduction</h3>
+<ul class="steps">
+<li>Oxidation: loss of electrons</li>
+<li>Reduction: gain of electrons</li>
+</ul>
+<div class="exam-tip">📌 أعلى E° = أقوى عامل مؤكسد</div>
+</div>
+<div class="card">
+<h3>Nernst Equation</h3>
+<div class="formula">E = E° − (0.059/n) log Q</div>
+<div class="quiz"><b>Quiz:</b> n=2, Q=100
+<details><summary>Answer</summary>E = E° − 0.059</details></div>
+</div>
+</div>
+</section>
+
+<section id="precip">
+<h2>4️⃣ Precipitation & Ksp</h2>
+<div class="grid">
+<div class="card">
+<h3>Solubility & Ksp</h3>
+<div class="formula">Ksp = s² (1:1 salt)</div>
+<ul class="steps">
+<li>احسب s</li>
+<li>حوّل إلى g/L لو طُلب</li>
+</ul>
+</div>
+<div class="card">
+<h3>Selective Precipitation</h3>
+<p>الأقل Ksp يترسب أولًا</p>
+<div class="quiz"><b>Quiz:</b> Which precipitates first?
+<details><summary>Answer</summary>Lower Ksp salt</details></div>
+</div>
+</div>
+</section>
+
+<section id="edta">
+<h2>5️⃣ EDTA & Complexometric Titration</h2>
+<div class="grid">
+<div class="card">
+<h3>EDTA Basics</h3>
+<ul class="steps">
+<li>نسبة 1:1 دائمًا</li>
+<li>Buffer ضروري</li>
+</ul>
+</div>
+<div class="card">
+<h3>Indicators</h3>
+<p>Metal ion indicators change color at end point</p>
+<div class="exam-tip">📌 سؤال نظري متكرر</div>
+</div>
+</div>
+</section>
+
+<section id="stats">
+<h2>6️⃣ Errors, Accuracy & Statistics</h2>
+<div class="grid">
+<div class="card">
+<h3>Types of Errors</h3>
+<ul class="steps">
+<li>Systematic: ثابت</li>
+<li>Random: عشوائي</li>
+</ul>
+</div>
+<div class="card">
+<h3>Standard Deviation</h3>
+<div class="formula">s = √(Σ(x−x̄)²/(n−1))</div>
+<div class="quiz"><b>Quiz:</b> Larger s?
+<details><summary>Answer</summary>Lower precision</details></div>
+</div>
+</div>
+</section>
+
+<footer>
+<p>✔️ الملف ده يغطي كل أفكار الامتحانات اللي اتبعتت — مراجعة نهائية مضمونة</p>
+</footer>
+</body>
+</html>
